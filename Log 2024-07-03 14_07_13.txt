@@ -1,0 +1,79 @@
+nRF Logger Welcome, 2024-07-03
+Welcome! (ReadMe)
+W	14:12:39.966	Welcome in nRF Logger
+
+I	14:12:39.974	nRF Logger allows developers to browse and view log sessions created in other applications.
+I	14:12:39.984	There are 6 log levels available for use which may be filtered in the menu:
+
+D	14:12:39.993	DEBUG - to log very low level events
+V	14:12:40.003	VERBOSE - by default hidden
+I	14:12:40.011	INFO - standard level, visible by default
+A	14:12:40.020	APP - for application level entries
+W	14:12:40.028	WARNING - to mark something important
+E	14:12:40.037	ERROR - when something goes wrong
+
+I	14:12:40.045	Please, change the Level value in menu to show and hide messages.
+V	14:12:40.055	A session may also be marked with a star or flag or given a description.
+a (0x181C)
+- First Name [R W] (0x2A8A)
+- Last Name [R W] (0x2A90)
+- Gender [R W] (0x2A8C)
+V	14:07:14.031	Connecting to F6:E7:E2:C9:F8:C6...
+D	14:07:14.032	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	14:07:14.225	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	14:07:14.225	Connected to F6:E7:E2:C9:F8:C6
+I	14:07:17.919	Connection parameters updated (interval: 7.5ms, latency: 0, timeout: 5000ms)
+V	14:07:18.638	Requesting new MTU...
+D	14:07:18.638	gatt.requestMtu(517)
+I	14:07:18.669	MTU changed to: 517
+V	14:07:18.763	Discovering services...
+D	14:07:18.763	gatt.discoverServices()
+I	14:07:18.764	Connection parameters updated (interval: 135.0ms, latency: 3, timeout: 4000ms)
+D	14:07:18.808	[Callback] Services discovered with status: 0
+I	14:07:18.808	Services discovered
+V	14:07:18.865	Generic Attribute (0x1801)
+- Service Changed [I] (0x2A05)
+   Client Characteristic Configuration (0x2902)
+Generic Access (0x1800)
+- Device Name [R] (0x2A00)
+- Appearance [R] (0x2A01)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- Serial Number String [R] (0x2A25)
+Unknown Service (abbafd00-e56a-484c-b832-8b17cf6cbfe8)
+- Unknown Characteristic [N R] (abbafd01-e56a-484c-b832-8b17cf6cbfe8)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [N R] (abbafd02-e56a-484c-b832-8b17cf6cbfe8)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (abbafd03-e56a-484c-b832-8b17cf6cbfe8)
+- Unknown Characteristic [I R] (abbafd04-e56a-484c-b832-8b17cf6cbfe8)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (ac2f0045-8182-4be5-91e0-2992e6b40ebb)
+- Unknown Characteristic [R] (ac2f0145-8182-4be5-91e0-2992e6b40ebb)
+- Unknown Characteristic [W] (ac2f0a45-8182-4be5-91e0-2992e6b40ebb)
+Unknown Service (abbaff00-e56a-484c-b832-8b17cf6cbfe8)
+- Unknown Characteristic [WNR] (abbaff01-e56a-484c-b832-8b17cf6cbfe8)
+- Unknown Characteristic [N] (abbaff02-e56a-484c-b832-8b17cf6cbfe8)
+   Client Characteristic Configuration (0x2902)
+Unknown Service (0000fe2c-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (00001233-0000-1000-8000-00805f9b34fb)
+- Firmware Revision String [R] (0x2A26)
+Unknown Service (0000fe26-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [I W] (389e8365-158f-4308-9204-756f29b6a87c)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [N] (e90c4308-3984-41f3-be3c-7118093c3300)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [WNR] (d9f83634-adf5-4cf6-a3c9-cdb149f6469c)
+- Unknown Characteristic [I W] (dd1d1206-568f-4b2d-a48c-969d8ad1f457)
+   Client Characteristic Configuration (0x2902)
+D	14:07:18.866	gatt.setCharacteristicNotification(00002a05-0000-1000-8000-00805f9b34fb, true)
+D	14:07:18.869	gatt.setCharacteristicNotification(abbafd01-e56a-484c-b832-8b17cf6cbfe8, true)
+D	14:07:18.871	gatt.setCharacteristicNotification(abbafd02-e56a-484c-b832-8b17cf6cbfe8, true)
+D	14:07:18.872	gatt.setCharacteristicNotification(abbafd04-e56a-484c-b832-8b17cf6cbfe8, true)
+D	14:07:18.874	gatt.setCharacteristicNotification(abbaff02-e56a-484c-b832-8b17cf6cbfe8, true)
+D	14:07:18.876	gatt.setCharacteristicNotification(389e8365-158f-4308-9204-756f29b6a87c, true)
+D	14:07:18.879	gatt.setCharacteristicNotification(e90c4308-3984-41f3-be3c-7118093c3300, true)
+D	14:07:18.886	gatt.setCharacteristicNotification(dd1d1206-568f-4b2d-a48c-969d8ad1f457, true)
